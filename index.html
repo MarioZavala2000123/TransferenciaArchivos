@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transferencia de Archivos</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <h1>Transferencia de Archivos</h1>
+    <form action="parameters.php" method="post" enctype="multipart/form-data">
+        <label for="to">Para:</label>
+        <input type="text" id="to" name="to"><br><br>
+
+        <label for="from">De:</label>
+        <input type="text" id="from" name="from"><br><br>
+
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject"><br><br>
+
+        <label for="message">Mensaje:</label>
+        <input type="text" id="message" name="message"><br><br>
+
+        <label for="files">Archivo:</label>
+        <input type="file" id="files" name="files[]" multiple><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
